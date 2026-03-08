@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🔐 Password Manager</h2>
+
+<form id="passwordForm">
+
+<input
+type="text"
+id="site"
+placeholder="Site (ex: gmail)"
+required
+>
+
+<input
+type="text"
+id="username"
+placeholder="Usuário ou Email"
+required
+>
+
+<input
+type="password"
+id="sitePassword"
+placeholder="Senha"
+required
+>
+
+<button type="submit">
+Salvar Senha
+</button>
+
+</form>
+
+<h3>Suas Senhas</h3>
+
+<ul id="passwordList"></ul>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
