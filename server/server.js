@@ -9,12 +9,6 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname,"../public")))
 
 
-// "Banco de dados" temporário
-const users = []
-
-
-// REGISTRO
-
 app.post("/register", async (req,res)=>{
 
 const {name,email,password} = req.body
@@ -44,8 +38,6 @@ message:"Usuário cadastrado com sucesso 🔐"
 })
 
 
-
-// LOGIN
 
 app.post("/login", async (req,res)=>{
 

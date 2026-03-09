@@ -1,6 +1,4 @@
-// =========================
-// REGISTRO
-// =========================
+
 
 const registerForm = document.getElementById("registerForm");
 
@@ -38,10 +36,6 @@ alert(data.message);
 
 }
 
-
-// =========================
-// LOGIN
-// =========================
 
 const loginForm = document.getElementById("loginForm");
 
@@ -86,10 +80,6 @@ alert(data.message);
 }
 
 
-// =========================
-// PASSWORD MANAGER
-// =========================
-
 const passwordForm = document.getElementById("passwordForm");
 
 if (passwordForm) {
@@ -106,7 +96,7 @@ const site = document.getElementById("site").value;
 const username = document.getElementById("username").value;
 const sitePassword = document.getElementById("sitePassword").value;
 
-// criptografia da senha
+
 const encryptedPassword = CryptoJS.AES.encrypt(
 sitePassword,
 "chave-secreta"
